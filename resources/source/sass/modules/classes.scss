@@ -1,0 +1,196 @@
+.contentNode {
+
+    position: relative;
+    display: inline-flex;
+    height: 100%;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-left: 40px;
+    opacity: 0;
+
+    #bracket {
+
+        // Additional values for "top" and "left" properties are declared in resources/source/js/application/ContendNode.js
+
+        position: absolute;
+        opacity: 0.5;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+.contentNodeRoot {
+
+    @extend .contentNode;
+
+    width: 240px;
+    align-items: flex-end;
+    margin-left: 0;
+}
+
+.contentNodeLeaf {
+
+    @extend .contentNode;
+
+    min-width: $IMAGE_MIN_WIDTH;
+}
+
+.picture {
+
+    min-width: $IMAGE_MIN_WIDTH;
+    overflow: hidden;
+
+    #content {
+
+        width: 100%;
+        height: 100%;
+        user-select: none;
+    }
+
+    #outline {
+
+        pointer-events: none;
+        user-select: none;
+    }
+
+    #book {
+
+        position: absolute;
+        top: 0;
+        pointer-events: none;
+        user-select: none;
+
+        #pageLeft {
+
+            transform: scaleX(1);
+        }
+
+        #pageRight {
+
+            transform: scaleX(1);
+        }
+    }
+}
+
+.loupe {
+
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    user-select: none;
+
+    #background {
+
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        width: $LOUPE_MASK_WIDTH;
+        height: $LOUPE_MASK_HEIGHT;
+        transform: translate3d($LOUPE_MASK_OFFSET_X, $LOUPE_MASK_OFFSET_Y, 0);
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    #mask {
+
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        width: $LOUPE_MASK_WIDTH;
+        height: $LOUPE_MASK_HEIGHT;
+        transform: translate3d($LOUPE_MASK_OFFSET_X, $LOUPE_MASK_OFFSET_Y, 0);
+        border-radius: 50%;
+        overflow: hidden;
+
+        #content {
+
+            position: absolute;
+            top: 0;
+            width: auto;
+            height: auto;
+            transform-origin: 0 0;
+        }
+    }
+
+    #skin {
+
+        z-index: 2;
+        position: relative;
+    }
+
+    #zoom {
+
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        font-family: $FONT_BOLD;
+        color: white;
+        transform: translate(31px, 186px) rotate(45deg);
+    }
+}
+
+.textFieldActive {
+
+    color: $COLOR_DEFAULT;
+    cursor: pointer;
+
+    &:hover {
+
+        color: $COLOR_HOVER;
+    }
+
+    &:active {
+
+        color: $COLOR_DEFAULT;
+        user-select: none;
+    }
+
+    &:link {
+
+        color: $COLOR_DEFAULT;
+        text-decoration: none;
+
+        &:hover {
+
+            color: $COLOR_HOVER;
+        }
+
+        &:active {
+
+            color: $COLOR_DEFAULT;
+            user-select: none;
+        }
+    }
+
+    &:visited {
+
+        color: $COLOR_DEFAULT;
+
+        &:hover {
+
+            color: $COLOR_HOVER;
+        }
+    }
+}
+
+.textFieldWhitespace {
+
+    white-space: pre;
+    pointer-events: none;
+    user-select: none;
+}
+
+.textFieldFootnote {
+
+    margin-top: 14px;
+    font-size: 10px;
+    color: $COLOR_FOOTNOTE;
+}
+
+.suspendPointerEvents {
+
+    pointer-events: none;
+}
