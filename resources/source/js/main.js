@@ -22,7 +22,7 @@ import Controller from "./application/Controller.js";
 
 /**
  * @description The <strong>main.js</strong> module is the entry point to the application.
- * @requires App
+ * @requires Controller
  * @module
  * 
  */
