@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./resources/source/images/Icon.png" width="500">   
+<img src="./resources/build/images/Icon.png" width="500">   
 <h1>
 <strong>PORTFOLIO ONLINE</strong>
 </h1>
