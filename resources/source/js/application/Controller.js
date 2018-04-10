@@ -190,10 +190,8 @@ class Controller {
             this._contentLastChild = null;
 
             /**
-             * Employing a setTimeout() with zero milliseconds solves a bug in Chrome where getBoundingClientRect() values are
-             * not being recalculated when required.  This approach forces a reflow/repaint before appending a new instance of
-             * ContentNode so that getBoundingClientRect() values are always recalculated rather than retrieving previous values
-             * sanctioned by Chrome for the purpose of optimization and performance.
+             * Employing a setTimeout() with zero milliseconds places the ContentNode instance in the event loop queue which
+             * allows the rendering engine to finish first so that getBoundingClientRect() values are appropriately updated.
              * 
              */
             setTimeout(() => this._appendContent(this._selectedTextFieldID), 0);

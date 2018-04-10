@@ -44,7 +44,7 @@ class Loader extends Dispatcher {
 
         this._XHRErrorHandler = this._XHRErrorHandler.bind(this);
         this._XHRProgressHandler = this._XHRProgressHandler.bind(this);
-        this._XHRLoadHandler = this._XHRLoadHandler.bind(this);
+        this._XHRCompleteHandler = this._XHRCompleteHandler.bind(this);
 
         this._xhr = new XMLHttpRequest();
         this._xhr.responseType = responseType;
@@ -59,10 +59,7 @@ class Loader extends Dispatcher {
      */
     _XHRErrorHandler(event) {
 
-        const xhr = event.target;
-        xhr.removeEventListener(Loader.Event.ERROR, this._XHRErrorHandler);
-        xhr.removeEventListener(Loader.Event.PROGRESS, this._XHRProgressHandler);
-        xhr.removeEventListener(Loader.Event.LOAD, this._XHRLoadHandler);
+        this._removeEventListeners(event.target);
 
         throw new Error("File Read Error");
     }
@@ -86,12 +83,11 @@ class Loader extends Dispatcher {
      * @function
      * 
      */
-    _XHRLoadHandler(event) {
+    _XHRCompleteHandler(event) {
 
         const xhr = event.target;
-        xhr.removeEventListener(Loader.Event.ERROR, this._XHRErrorHandler);
-        xhr.removeEventListener(Loader.Event.PROGRESS, this._XHRProgressHandler);        
-        xhr.removeEventListener(Loader.Event.LOAD, this._XHRLoadHandler);
+
+        this._removeEventListeners(xhr);
 
         if (xhr.status === 404) {
 
@@ -99,6 +95,20 @@ class Loader extends Dispatcher {
         }
 
         super.dispatch(Loader.Event.COMPLETE, {target: this, response: xhr.response});
+    }
+
+    /**
+     * @description Removes the <em>"error"</em>, <em>"progress"</em> and <em>"load"</em> event listeners from the XMLHttpRequest.
+     * @param {Object} xhr - The XMLHttpRequest class instance.
+     * @private
+     * @function
+     * 
+     */
+    _removeEventListeners(xhr) {
+
+        xhr.removeEventListener(Loader.Event.ERROR, this._XHRErrorHandler);
+        xhr.removeEventListener(Loader.Event.PROGRESS, this._XHRProgressHandler);
+        xhr.removeEventListener("load", this._XHRCompleteHandler);
     }
 
     /**
@@ -112,7 +122,7 @@ class Loader extends Dispatcher {
         const xhr = this._xhr;
         xhr.addEventListener(Loader.Event.ERROR, this._XHRErrorHandler);
         xhr.addEventListener(Loader.Event.PROGRESS, this._XHRProgressHandler);
-        xhr.addEventListener(Loader.Event.LOAD, this._XHRLoadHandler);
+        xhr.addEventListener("load", this._XHRCompleteHandler);
         xhr.open("GET", this._url);
         xhr.send();
     }
@@ -125,11 +135,8 @@ class Loader extends Dispatcher {
      */
     abort() {
 
-        const xhr = this._xhr;
-        xhr.removeEventListener(Loader.Event.ERROR, this._XHRErrorHandler);
-        xhr.removeEventListener(Loader.Event.PROGRESS, this._XHRProgressHandler);
-        xhr.removeEventListener(Loader.Event.LOAD, this._XHRLoadHandler);
-        xhr.abort();
+        this._removeEventListeners(this._xhr);
+        this._xhr.abort();
     }
 
     /**
@@ -151,7 +158,6 @@ class Loader extends Dispatcher {
      * <ul>
      *     <li> COMPLETE </li>
      *     <li> ERROR </li>
-     *     <li> LOAD </li>
      *     <li> PROGRESS </li>
      * </ul>
      * 
@@ -165,7 +171,6 @@ class Loader extends Dispatcher {
 
             COMPLETE: "complete",
             ERROR: "error",
-            LOAD: "load",
             PROGRESS: "progress"
         };
     }

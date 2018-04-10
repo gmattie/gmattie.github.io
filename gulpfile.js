@@ -73,15 +73,11 @@ gulp.task(tasks.TRANSPILE_JS, () => {
                         loader: "babel-loader",
                         exclude: /(node_modules)/,
                         options: {
-                            presets: [["latest", {"es2015": {"modules": false}}]]
+                            presets: [["env", {"modules": false}]]
                         }
                     }]
                 },
-                plugins: (config.PRODUCTION) ? [new webpackUglify({
-                                                    compress: {warnings: true},
-                                                    sourceMap: (config.DEVELOPMENT)})
-                                               ]
-                                             : [],
+                plugins: (config.PRODUCTION) ? [new webpackUglify({sourceMap: (config.DEVELOPMENT)})] : [],
                 output: {filename: `${files.JS}`},
                 devtool: (config.DEVELOPMENT) ? "inline-source-map" : ""
             }, webpack)
