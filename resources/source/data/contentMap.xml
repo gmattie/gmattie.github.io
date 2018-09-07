@@ -72,6 +72,12 @@
                 <text label="main interface from size me, 2011"/>
                 <text label="screen capture, blackberry tablet os"/>
             </leaf>
+            <leaf label="measurements list" id="measurementsList">
+                <image url="./resources/build/data/content/userInterface/sizeMe/MeasurementsList.jpg" width="1504" height="823" zoomable="zoomable"/>
+                <text label=" "/>
+                <text label="measurements list from size me, 2011"/>
+                <text label="screen captures, iphone os"/>
+            </leaf>
         </branch>
         <branch label="drop swatch" id="UIDropSwatch">
             <leaf label="installer icon" id="dropSwatchInstallerIcon">
