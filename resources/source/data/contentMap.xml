@@ -67,7 +67,7 @@
                 <text label="scalable vector graphic"/>
             </leaf>
             <leaf label="main interface" id="sizeMeMainInterface">
-                <image url="./resources/build/data/content/userInterface/sizeMe/MainInterface.jpg" width="1024" height="600" zoomable="zoomable"/>
+                <image url="./resources/build/data/content/userInterface/sizeMe/MainInterface.jpg" width="1310" height="885" zoomable="zoomable"/>
                 <text label=" "/>
                 <text label="main interface from size me, 2011"/>
                 <text label="screen capture, blackberry tablet os"/>
@@ -189,7 +189,7 @@
                 <text label="bitmap graphic, 512 x 512 px"/>
             </leaf>
             <leaf label="main interface" id="filmLightMainInterface">
-                <image url="./resources/build/data/content/userInterface/filmLight/MainInterface.jpg" width="1220" height="480" zoomable="zoomable"/>
+                <image url="./resources/build/data/content/userInterface/filmLight/MainInterface.jpg" width="1572" height="761" zoomable="zoomable"/>
                 <text label=" "/>
                 <text label="main interface from film light, 2009"/>
                 <text label="screen captures, iphone os"/>
