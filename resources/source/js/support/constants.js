@@ -430,7 +430,7 @@ Object.freeze(Line);
  */
 const Loupe = {
 
-    ZOOM_DEFAULT: 1.0,
+    ZOOM_DEFAULT: 1.5,
     ZOOM_INSTRUCTION: "image zoom:  mouse over and scroll or press keyboard arrows.  hold shift to accelerate.",
     ZOOM_MAX: 4.0,
     ZOOM_STEP: 0.01,
