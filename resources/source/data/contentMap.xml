@@ -6,8 +6,8 @@
 
 	<branch label="code" id="rootCode">
         <leaf label="javascript" id="codeJavaScript">
-            <text label="[ portfolio online ]" href="https://github.com/gmattie/gmattie.github.io"/>
             <text label="[ data pixels ]" href="https://github.com/gmattie/Data-Pixels"/>
+            <text label="[ portfolio online ]" href="https://github.com/gmattie/gmattie.github.io"/>
             <text label="[ project foundation ]" href="https://github.com/gmattie/Project-Foundation"/>
         </leaf>
         <leaf label="actionscript" id="codeActionScript">
