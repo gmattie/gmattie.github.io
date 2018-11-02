@@ -358,8 +358,8 @@
                 <text label="off air application for windows, 2013"/>
                 <text label="drown out audible distractions by submerging yourself in consistent and customizable noise"/>
                 <text label=" "/>
-                <text label="[ windows installer ]" href="./resources/build/data/content/software/applications/offAir/Off Air.exe" download="download"/>
-                <text label="[ windows installer + air captive runtime ]" href="./resources/build/data/content/software/applications/offAir/Off Air.zip" download="download"/>
+                <text label="[ windows installer ]" href="https://github.com/gmattie/gmattie.github.io/releases/download/1.0.0/Off.Air.exe" download="download"/>
+                <text label="[ windows installer + air captive runtime ]" href="https://github.com/gmattie/gmattie.github.io/releases/download/1.0.0/Off.Air.zip" download="download"/>
             </leaf>        
             <leaf label="drop swatch" id="applicationsDropSwatch">
                 <image url="./resources/build/data/content/software/applications/dropSwatch/DropSwatchIcon128.jpg" width="128" height="128"/>
@@ -367,8 +367,8 @@
                 <text label="drop swatch application for windows / mac, 2011"/>
                 <text label="explore unlimited hues and develop your color pallet with several color modes and texture options"/>
                 <text label=" "/>
-                <text label="[ windows installer ]" href="./resources/build/data/content/software/applications/dropSwatch/Drop Swatch.exe" download="download"/>
-                <text label="[ mac installer ]" href="./resources/build/data/content/software/applications/dropSwatch/Drop Swatch.dmg" download="download"/>
+                <text label="[ windows installer ]" href="https://github.com/gmattie/gmattie.github.io/releases/download/1.0.0/Drop.Swatch.exe" download="download"/>
+                <text label="[ mac installer ]" href="https://github.com/gmattie/gmattie.github.io/releases/download/1.0.0/Drop.Swatch.dmg" download="download"/>
             </leaf>
             <leaf label="disco desktop" id="applicationsDiscoDesktop">
                 <image url="./resources/build/data/content/software/applications/discoDesktop/DiscoDesktopIcon128.jpg" width="128" height="128"/>
@@ -376,8 +376,8 @@
                 <text label="disco desktop application for windows / mac, 2010"/>
                 <text label="communicate with a microcontroler via usb serial port to control brightness and frequency of led lights"/>
                 <text label=" "/>
-                <text label="[ windows installer ]" href="./resources/build/data/content/software/applications/discoDesktop/Disco Desktop.exe" download="download"/>
-                <text label="[ mac installer ]" href="./resources/build/data/content/software/applications/discoDesktop/Disco Desktop.dmg" download="download"/>
+                <text label="[ windows installer ]" href="https://github.com/gmattie/gmattie.github.io/releases/download/1.0.0/Disco.Desktop.exe" download="download"/>
+                <text label="[ mac installer ]" href="https://github.com/gmattie/gmattie.github.io/releases/download/1.0.0/Disco.Desktop.dmg" download="download"/>
             </leaf>
         </branch>
         <branch label="games" id="softwareGames">
