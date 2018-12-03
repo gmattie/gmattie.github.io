@@ -33,13 +33,13 @@
                 <text label="screen capture, windows 10"/>
             </leaf>
             <leaf label="main interface vertical light" id="dataPixelsPlaygroundMainInterfaceLight">
-                <image url="./resources/build/data/content/userInterface/dataPixelsPlayground/MainInterfaceVerticalLight.png" width="1458" height="898" zoomable="zoomable"/>
+                <image url="./resources/build/data/content/userInterface/dataPixelsPlayground/MainInterfaceVerticalLight.png" width="1458" height="943" zoomable="zoomable"/>
                 <text label=" "/>
                 <text label="main interface vertical light from data pixels playground, 2017"/>
                 <text label="screen capture, windows 10"/>
             </leaf>
             <leaf label="settings panel" id="dataPixelsPlaygroundSettingsPanel">
-                <image url="./resources/build/data/content/userInterface/dataPixelsPlayground/SettingsPanel.jpg" width="1458" height="898" zoomable="zoomable"/>
+                <image url="./resources/build/data/content/userInterface/dataPixelsPlayground/SettingsPanel.jpg" width="1458" height="943" zoomable="zoomable"/>
                 <text label=" "/>
                 <text label="settings panel from data pixels playground, 2017"/>
                 <text label="screen capture, windows 10"/>
