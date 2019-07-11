@@ -359,7 +359,7 @@
                 <text label="drown out audible distractions by submerging yourself in consistent and customizable noise"/>
                 <text label=" "/>
                 <text label="[ windows installer + air captive runtime ]" href="https://github.com/gmattie/Off-Air/releases/download/1.0.0/Off.Air.Extracted.Windows.zip" download="download"/>
-                <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Off-Air" download="download"/>
+                <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Off-Air"/>
             </leaf>        
             <leaf label="drop swatch" id="applicationsDropSwatch">
                 <image url="./resources/build/data/content/software/applications/dropSwatch/DropSwatchIcon128.jpg" width="128" height="128"/>
@@ -368,7 +368,7 @@
                 <text label="explore unlimited hues and develop your color pallet with several color modes and texture options"/>
                 <text label=" "/>
                 <text label="[ windows installer ]" href="https://github.com/gmattie/Drop-Swatch/releases/download/1.0.0/Drop.Swatch.Extracted.Windows.zip" download="download"/>
-                <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Drop-Swatch" download="download"/>
+                <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Drop-Swatch"/>
             </leaf>
             <leaf label="disco desktop" id="applicationsDiscoDesktop">
                 <image url="./resources/build/data/content/software/applications/discoDesktop/DiscoDesktopIcon128.jpg" width="128" height="128"/>
@@ -377,7 +377,7 @@
                 <text label="communicate with a microcontroller via usb serial port to control brightness and frequency of led lights"/>
                 <text label=" "/>
                 <text label="[ windows installer ]" href="https://github.com/gmattie/Disco-Desktop/releases/download/1.0.0/Disco.Desktop.Extracted.Windows.zip" download="download"/>
-                <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Disco-Desktop" download="download"/>
+                <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Disco-Desktop"/>
             </leaf>
         </branch>
         <branch label="games" id="softwareGames">
