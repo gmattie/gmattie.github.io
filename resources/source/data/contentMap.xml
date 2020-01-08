@@ -6,6 +6,7 @@
 
 	<branch label="code" id="rootCode">
         <leaf label="javascript" id="codeJavaScript">
+            <text label="[ ballot box ]" href="https://github.com/gmattie/Ballot-Box"/>
             <text label="[ data pixels ]" href="https://github.com/gmattie/Data-Pixels"/>
             <text label="[ portfolio online ]" href="https://github.com/gmattie/gmattie.github.io"/>
             <text label="[ project foundation ]" href="https://github.com/gmattie/Project-Foundation"/>
