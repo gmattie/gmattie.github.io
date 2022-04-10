@@ -4,7 +4,7 @@
 
     <!-- Code -->
 
-	<branch label="code" id="rootCode">
+	  <branch label="code" id="rootCode">
         <leaf label="javascript" id="codeJavaScript">
             <text label="[ ballot box ]" href="https://github.com/gmattie/Ballot-Box"/>
             <text label="[ utilities ]" href="https://github.com/gmattie/Utilities"/>
@@ -14,14 +14,52 @@
         </leaf>
         <leaf label="actionscript" id="codeActionScript">
             <text label="[ off air ]" href="https://github.com/gmattie/Off-Air"/>
-			<text label="[ starling extensions ]" href="https://github.com/gmattie/ActionScript-3.0/tree/master/starling/extensions"/>
-			<text label="[ com mattie ]" href="https://github.com/gmattie/ActionScript-3.0/tree/master/com/mattie"/>
+            <text label="[ starling extensions ]" href="https://github.com/gmattie/ActionScript-3.0/tree/master/starling/extensions"/>
+            <text label="[ com mattie ]" href="https://github.com/gmattie/ActionScript-3.0/tree/master/com/mattie"/>
         </leaf>
     </branch>
 
     <!-- User Interface -->
 	
     <branch label="ui" id="rootUI">
+        <branch label="ballot box" id="UIBallotBox">
+            <leaf label="application icon" id="ballotBoxApplicationIcon">
+                <image url="./resources/build/data/content/userInterface/ballotBox/ApplicationIcon.png" width="512" height="512" zoomable="zoomable"/>
+                <text label=" "/>
+                <text label="application icon from ballot box, 2020"/>
+                <text label="scalable vector graphic"/>
+            </leaf>
+            <leaf label="access interface" id="ballotBoxAccessInterface">
+                <image url="./resources/build/data/content/userInterface/ballotBox/AccessInterface.png" width="2220" height="1170" zoomable="zoomable"/>
+                <text label=" "/>
+                <text label="access interface from ballot box, 2020"/>
+                <text label="progressive web app screen captures, android"/>
+            </leaf>
+            <leaf label="voting interface" id="ballotBoxVotingInterface">
+                <image url="./resources/build/data/content/userInterface/ballotBox/VotingInterface.png" width="1660" height="1170" zoomable="zoomable"/>
+                <text label=" "/>
+                <text label="voting interface from ballot box, 2020"/>
+                <text label="progressive web app screen captures, android"/>
+            </leaf>
+            <leaf label="results interface" id="ballotBoxResultsInterface">
+                <image url="./resources/build/data/content/userInterface/ballotBox/ResultsInterface.png" width="2220" height="1170" zoomable="zoomable"/>
+                <text label=" "/>
+                <text label="results interface from ballot box, 2020"/>
+                <text label="progressive web app screen captures, android"/>
+            </leaf>
+            <leaf label="dashboard interface" id="ballotBoxDashboardInterface">
+                <image url="./resources/build/data/content/userInterface/ballotBox/DashboardInterface.png" width="2220" height="1170" zoomable="zoomable"/>
+                <text label=" "/>
+                <text label="dashboard interface from ballot box, 2020"/>
+                <text label="progressive web app screen captures, android"/>
+            </leaf>
+            <leaf label="modals" id="ballotBoxModals">
+                <image url="./resources/build/data/content/userInterface/ballotBox/Modals.png" width="1660" height="1170" zoomable="zoomable"/>
+                <text label=" "/>
+                <text label="modals from ballot box, 2020"/>
+                <text label="progressive web app screen captures, android"/>
+            </leaf>
+        </branch>
         <branch label="data pixels playground" id="UIDataPixlesPlayground">
             <leaf label="application icon" id="dataPixelsPlaygroundApplicationIcon">
                 <image url="./resources/build/data/content/userInterface/dataPixelsPlayground/ApplicationIcon.png" width="1024" height="1024" zoomable="zoomable"/>
@@ -346,15 +384,23 @@
 
     <branch label="software" id="rootSoftware">
         <branch label="applications" id="softwareApplications">
+            <leaf label="ballot box" id="applicationsBallotBox">
+                <image url="./resources/build/data/content/software/applications/ballotBox/BallotBoxIcon128.png" width="128" height="128"/>
+                <text label=" "/>
+                <text label="ballot box web application, 2020"/>
+                <text label="open polls and aggregate election results using your own database"/>
+                <text label=" "/>
+                <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Ballot-Box"/>
+            </leaf> 
             <leaf label="data pixels playground" id="applicationsDataPixelsPlayground">
                 <image url="./resources/build/data/content/software/applications/dataPixelsPlayground/DataPixelsPlayground128.png" width="128" height="128"/>
                 <text label=" "/>
                 <text label="data pixels playground application for windows / mac / linux, 2017"/>
                 <text label="create pixel art programmatically"/>
                 <text label=" "/>
-                <text label="[ windows installer ]" href="https://github.com/gmattie/Data-Pixels/releases"/>
+                <text label="[ windows installer ]" href="https://github.com/gmattie/Data-Pixels/releases/download/1.1.0/Data.Pixels.Playground-win32-x64.zip"/>
                 <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Data-Pixels"/>
-            </leaf>   
+            </leaf>    
             <leaf label="off air" id="applicationsOffAir">
                 <image url="./resources/build/data/content/software/applications/offAir/OffAirIcon128.jpg" width="128" height="128"/>
                 <text label=" "/>
@@ -410,9 +456,9 @@
     <text label=" "/>
 
     <leaf label="contact" id="rootContact">
-		<text label="[ email ]" href="mailto:info@geoffreymattie.com"/>
+		    <text label="[ email ]" href="mailto:info@geoffreymattie.com"/>
         <text label="[ github ]" href="https://github.com/gmattie"/>
-		<text label="[ linkedin ]" href="https://www.linkedin.com/in/geoffreymattie"/>
+		    <text label="[ linkedin ]" href="https://www.linkedin.com/in/geoffreymattie"/>
     </leaf>
     
 </root>
