@@ -6,189 +6,149 @@
 */
 
 .animationBookPageRight {
-
-    animation: bookPageRight $ANIMATION_DURATION ease-out forwards;
+  animation: bookPageRight $ANIMATION_DURATION ease-out forwards;
 }
 
 @keyframes bookPageRight {
+  from {
+    transform: scaleX(0) translate3d(-$ANIMATION_DISTANCE, 0, 0);
+    opacity: 0;
+  }
 
-    from {
-
-        transform: scaleX(0) translate3d(-$ANIMATION_DISTANCE, 0, 0);
-        opacity: 0;
-    }
-
-    to {
-
-        transform: scaleX(1) translate3d(0, 0, 0);
-        opacity: 1;
-    }
+  to {
+    transform: scaleX(1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 .animationBookPageLeft {
-
-    animation: bookPageLeft $ANIMATION_DURATION ease-out forwards;
+  animation: bookPageLeft $ANIMATION_DURATION ease-out forwards;
 }
 
 @keyframes bookPageLeft {
+  from {
+    transform: scaleX(0);
+  }
 
-    from {
-
-        transform: scaleX(0);
-    }
-
-    to {
-
-        transform: scaleX(1);
-    }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .animationTitle {
-
-    animation: title $ANIMATION_DURATION ease-out forwards;
+  animation: title $ANIMATION_DURATION ease-out forwards;
 }
 
 @keyframes title {
+  from {
+    transform: translate3d(-$ANIMATION_DISTANCE, 0, 0);
+    opacity: 0;
+  }
 
-    from {
-
-        transform: translate3d(-$ANIMATION_DISTANCE, 0, 0);
-        opacity: 0;
-    }
-
-    to {
-
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-    }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 .animationContentNodeAppend {
-
-    animation: contentNodeAppend $ANIMATION_DURATION ease-out forwards;
+  animation: contentNodeAppend $ANIMATION_DURATION ease-out forwards;
 }
 
 @keyframes contentNodeAppend {
+  from {
+    opacity: 0;
+    transform: translate3d($ANIMATION_DISTANCE, 0, 0);
+  }
 
-    from {
-
-        opacity: 0;
-        transform: translate3d($ANIMATION_DISTANCE, 0, 0);
-    }
-
-    to {
-
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .animationContentNodeRemove {
-
-    animation: contentNodeRemove $ANIMATION_DURATION ease-out forwards;
+  animation: contentNodeRemove $ANIMATION_DURATION ease-out forwards;
 }
 
 @keyframes contentNodeRemove {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 
-    from {
-
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-
-    to {
-
-        opacity: 0;
-        transform: translate3d($ANIMATION_DISTANCE, 0, 0);
-    }
+  to {
+    opacity: 0;
+    transform: translate3d($ANIMATION_DISTANCE, 0, 0);
+  }
 }
 
 .animationTextFieldSelect {
-
-    animation: textFieldSelect $ANIMATION_DURATION ease-out forwards;
+  animation: textFieldSelect $ANIMATION_DURATION ease-out forwards;
 }
 
 @keyframes textFieldSelect {
+  from {
+    color: $COLOR_DEFAULT;
+  }
 
-    from {
-
-        color: $COLOR_DEFAULT;
-    }
-
-    to {
-
-        color: $COLOR_THEME;
-    }
+  to {
+    color: $COLOR_THEME;
+  }
 }
 
 .animationTextFieldDeselect {
-
-    animation: textFieldDeselect $ANIMATION_DURATION ease-out forwards;
+  animation: textFieldDeselect $ANIMATION_DURATION ease-out forwards;
 }
 
 @keyframes textFieldDeselect {
+  from {
+    color: $COLOR_THEME;
+  }
 
-    from {
-
-        color: $COLOR_THEME;
-    }
-
-    to {
-
-        color: $COLOR_DEFAULT;
-    }
+  to {
+    color: $COLOR_DEFAULT;
+  }
 }
 
 .animationImagePreloader {
-
-    animation: imagePreloader $ANIMATION_DURATION ease-in-out infinite alternate;
+  animation: imagePreloader $ANIMATION_DURATION ease-in-out infinite alternate;
 }
 
 @keyframes imagePreloader {
+  from {
+    opacity: 1;
+  }
 
-    from {
-
-        opacity: 1;
-    }
-
-    to {
-
-        opacity: 0.25;
-    }
+  to {
+    opacity: 0.25;
+  }
 }
 
 .animationFadeIn {
-
-    animation: fadeIn $ANIMATION_DURATION ease-in forwards;
+  animation: fadeIn $ANIMATION_DURATION ease-in forwards;
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
-    from {
-
-        opacity: 0;
-    }
-
-    to {
-
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .animationFadeOut {
-
-    animation: fadeOut $ANIMATION_DURATION ease-out forwards;
+  animation: fadeOut $ANIMATION_DURATION ease-out forwards;
 }
 
 @keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
 
-    from {
-
-        opacity: 1;
-    }
-
-    to {
-
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }
