@@ -1,0 +1,99 @@
+/*! ../graphics/Book.js */
+
+/*! ../graphics/Bracket.js */
+
+/*! ../graphics/Outline.js */
+
+/*! ../support/Dispatcher.js */
+
+/*! ../support/Loader.js */
+
+/*! ../support/constants.js */
+
+/*! ../support/utils.js */
+
+/*! ./ContentNode.js */
+
+/*! ./Dispatcher.js */
+
+/*! ./Loupe.js */
+
+/*! ./Picture.js */
+
+/*! ./TextField.js */
+
+/*! ./application/Controller.js */
+
+/*! D:\Projects\gmattie.github.io\resources\source\js\index.js */
+
+/*! D:\Projects\gmattie.github.io\resources\source\sass\index.scss */
+
+/*! exports provided: Assets, Book, Bracket, Color, CSS, CSSAnimation, CSSClass, CSSID, Data, Event, HTML, HTMLElement, Key, Line, Loupe */
+
+/*! exports provided: default */
+
+/*! exports provided: elementTransformMatrix */
+
+/*! no exports provided */
+
+/*! no static exports found */
+
+/*!**************************************!*\
+  !*** ./resources/source/js/index.js ***!
+  \**************************************/
+
+/*!******************************************!*\
+  !*** ./resources/source/sass/index.scss ***!
+  \******************************************/
+
+/*!**********************************************!*\
+  !*** ./resources/source/js/graphics/Book.js ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./resources/source/js/support/utils.js ***!
+  \**********************************************/
+
+/*!***********************************************!*\
+  !*** ./resources/source/js/support/Loader.js ***!
+  \***********************************************/
+
+/*!*************************************************!*\
+  !*** ./resources/source/js/graphics/Bracket.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./resources/source/js/graphics/Outline.js ***!
+  \*************************************************/
+
+/*!**************************************************!*\
+  !*** ./resources/source/js/application/Loupe.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./resources/source/js/support/constants.js ***!
+  \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./resources/source/js/support/Dispatcher.js ***!
+  \***************************************************/
+
+/*!****************************************************!*\
+  !*** ./resources/source/js/application/Picture.js ***!
+  \****************************************************/
+
+/*!******************************************************!*\
+  !*** ./resources/source/js/application/TextField.js ***!
+  \******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./resources/source/js/application/Controller.js ***!
+  \*******************************************************/
+
+/*!********************************************************!*\
+  !*** ./resources/source/js/application/ContentNode.js ***!
+  \********************************************************/
+
+/*!*******************************************************************************!*\
+  !*** multi ./resources/source/js/index.js ./resources/source/sass/index.scss ***!
+  \*******************************************************************************/

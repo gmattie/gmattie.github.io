@@ -23,8 +23,8 @@
 
   <!-- User Interface -->
 
-  <branch label="ui" id="rootUI">
-    <branch label="ballot box" id="UIBallotBox">
+  <branch label="ui / ux" id="rootUIUX">
+    <branch label="ballot box" id="UIUXBallotBox">
       <leaf label="application icon" id="ballotBoxApplicationIcon">
         <image url="./resources/build/data/content/userInterface/ballotBox/ApplicationIcon.png" width="512" height="512" zoomable="zoomable"/>
         <text label=" "/>
@@ -62,7 +62,7 @@
         <text label="progressive web app screen captures, android"/>
       </leaf>
     </branch>
-    <branch label="data pixels playground" id="UIDataPixlesPlayground">
+    <branch label="data pixels playground" id="UIUXDataPixlesPlayground">
       <leaf label="application icon" id="dataPixelsPlaygroundApplicationIcon">
         <image url="./resources/build/data/content/userInterface/dataPixelsPlayground/ApplicationIcon.png" width="1024" height="1024" zoomable="zoomable"/>
         <text label=" "/>
@@ -88,7 +88,7 @@
         <text label="screen capture, windows 10"/>
       </leaf>
     </branch>
-    <branch label="off air" id="UIOffAir">
+    <branch label="off air" id="UIUXOffAir">
       <leaf label="application icon" id="offAirApplicationIcon">
         <image url="./resources/build/data/content/userInterface/offAir/ApplicationIcon.jpg" width="512" height="512" zoomable="zoomable"/>
         <text label=" "/>
@@ -102,7 +102,7 @@
         <text label="screen capture, windows 7"/>
       </leaf>
     </branch>
-    <branch label="size me" id="UISizeMe">
+    <branch label="size me" id="UIUXSizeMe">
       <leaf label="application icon" id="sizeMeApplicationIcon">
         <image url="./resources/build/data/content/userInterface/sizeMe/ApplicationIcon.jpg" width="887" height="867" zoomable="zoomable"/>
         <text label=" "/>
@@ -122,7 +122,7 @@
         <text label="screen captures, iphone os"/>
       </leaf>
     </branch>
-    <branch label="drop swatch" id="UIDropSwatch">
+    <branch label="drop swatch" id="UIUXDropSwatch">
       <leaf label="installer icon" id="dropSwatchInstallerIcon">
         <image url="./resources/build/data/content/userInterface/dropSwatch/InstallerIcon.jpg" width="512" height="512" zoomable="zoomable"/>
         <text label=" "/>
@@ -160,7 +160,7 @@
         <text label="screen capture, mac os x"/>
       </leaf>
     </branch>
-    <branch label="fire call" id="UIFireCall">
+    <branch label="fire call" id="UIUXFireCall">
       <leaf label="box cover" id="fireCallBoxCover">
         <image url="./resources/build/data/content/userInterface/fireCall/BoxCover.jpg" width="1224" height="1224" zoomable="zoomable"/>
         <text label=" "/>
@@ -204,7 +204,7 @@
         <text label="digital print, 6 x 8 cm each"/>
       </leaf>
     </branch>
-    <branch label="disco desktop" id="UIDiscoDesktop">
+    <branch label="disco desktop" id="UIUXDiscoDesktop">
       <leaf label="installer window" id="discoDesktopInstallerWindow">
         <image url="./resources/build/data/content/userInterface/discoDesktop/InstallerWindow.jpg" width="680" height="402" zoomable="zoomable"/>
         <text label=" "/>
@@ -224,7 +224,7 @@
         <text label="screen capture, custom ui"/>
       </leaf>
     </branch>
-    <branch label="film light" id="UIFilmLight">
+    <branch label="film light" id="UIUXFilmLight">
       <leaf label="application icon" id="filmLightApplicationIcon">
         <image url="./resources/build/data/content/userInterface/filmLight/ApplicationIcon.jpg" width="512" height="512" zoomable="zoomable"/>
         <text label=" "/>
@@ -385,72 +385,50 @@
   <!-- Software -->
 
   <branch label="software" id="rootSoftware">
-    <branch label="applications" id="softwareApplications">
-      <leaf label="ballot box" id="applicationsBallotBox">
-        <image url="./resources/build/data/content/software/applications/ballotBox/BallotBoxIcon128.png" width="128" height="128"/>
-        <text label=" "/>
-        <text label="ballot box web application, 2020"/>
-        <text label="open polls and aggregate election results using your own database"/>
-        <text label=" "/>
-        <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Ballot-Box"/>
-      </leaf>
-      <leaf label="data pixels playground" id="applicationsDataPixelsPlayground">
-        <image url="./resources/build/data/content/software/applications/dataPixelsPlayground/DataPixelsPlayground128.png" width="128" height="128"/>
-        <text label=" "/>
-        <text label="data pixels playground application for windows / mac / linux, 2017"/>
-        <text label="create pixel art programmatically"/>
-        <text label=" "/>
-        <text label="[ windows installer ]" href="https://github.com/gmattie/Data-Pixels/releases/download/1.1.0/Data.Pixels.Playground-win32-x64.zip"/>
-        <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Data-Pixels"/>
-      </leaf>
-      <leaf label="off air" id="applicationsOffAir">
-        <image url="./resources/build/data/content/software/applications/offAir/OffAirIcon128.jpg" width="128" height="128"/>
-        <text label=" "/>
-        <text label="off air application for windows, 2013"/>
-        <text label="drown out audible distractions by submerging yourself in consistent and customizable noise"/>
-        <text label=" "/>
-        <text label="[ windows installer + air captive runtime ]" href="https://github.com/gmattie/Off-Air/releases/download/1.0.0/Off.Air.Extracted.Windows.zip" download="download"/>
-        <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Off-Air"/>
-      </leaf>
-      <leaf label="drop swatch" id="applicationsDropSwatch">
-        <image url="./resources/build/data/content/software/applications/dropSwatch/DropSwatchIcon128.jpg" width="128" height="128"/>
-        <text label=" "/>
-        <text label="drop swatch application for windows / mac, 2011"/>
-        <text label="explore unlimited hues and develop your color pallet with several color modes and texture options"/>
-        <text label=" "/>
-        <text label="[ windows installer ]" href="https://github.com/gmattie/Drop-Swatch/releases/download/1.0.0/Drop.Swatch.Extracted.Windows.zip" download="download"/>
-        <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Drop-Swatch"/>
-      </leaf>
-      <leaf label="disco desktop" id="applicationsDiscoDesktop">
-        <image url="./resources/build/data/content/software/applications/discoDesktop/DiscoDesktopIcon128.jpg" width="128" height="128"/>
-        <text label=" "/>
-        <text label="disco desktop application for windows / mac, 2010"/>
-        <text label="communicate with a microcontroller via usb serial port to control brightness and frequency of led lights"/>
-        <text label=" "/>
-        <text label="[ windows installer ]" href="https://github.com/gmattie/Disco-Desktop/releases/download/1.0.0/Disco.Desktop.Extracted.Windows.zip" download="download"/>
-        <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Disco-Desktop"/>
-      </leaf>
-    </branch>
-    <branch label="games" id="softwareGames">
-      <leaf label="nosgoth" id="gamesNosgoth">
-        <image url="./resources/build/data/content/software/games/nosgoth/Nosgoth.jpg" width="959" height="600" zoomable="zoomable"/>
-        <text label=" "/>
-        <text label="nosgoth, psyonix / square-enix, 2014"/>
-        <text label="ui programmer, square-enix montreal team"/>
-        <text label=" "/>
-        <text label="[ official site ]" href="http://www.nosgoth.com/"/>
-        <text label="[ wikipedia ]" href="http://en.wikipedia.org/wiki/Nosgoth"/>
-      </leaf>
-      <leaf label="the secret world" id="gamesTheSecretWorld">
-        <image url="./resources/build/data/content/software/games/theSecretWorld/TheSecretWorld.jpg" width="636" height="900" zoomable="zoomable"/>
-        <text label=" "/>
-        <text label="the secret world, funcom / ea, 2012"/>
-        <text label="actionscript programmer, gui team"/>
-        <text label=" "/>
-        <text label="[ official site ]" href="http://www.thesecretworld.com/"/>
-        <text label="[ wikipedia ]" href="http://en.wikipedia.org/wiki/The_Secret_World"/>
-      </leaf>
-    </branch>
+    <leaf label="ballot box" id="softwareBallotBox">
+      <image url="./resources/build/data/content/software/ballotBox/BallotBoxIcon128.png" width="128" height="128"/>
+      <text label=" "/>
+      <text label="ballot box web application, 2020"/>
+      <text label="open polls and aggregate election results using your own database"/>
+      <text label=" "/>
+      <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Ballot-Box"/>
+    </leaf>
+    <leaf label="data pixels playground" id="softwareDataPixelsPlayground">
+      <image url="./resources/build/data/content/software/dataPixelsPlayground/DataPixelsPlayground128.png" width="128" height="128"/>
+      <text label=" "/>
+      <text label="data pixels playground application for windows / mac / linux, 2017"/>
+      <text label="create pixel art programmatically"/>
+      <text label=" "/>
+      <text label="[ windows installer ]" href="https://github.com/gmattie/Data-Pixels/releases/download/1.1.0/Data.Pixels.Playground-win32-x64.zip"/>
+      <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Data-Pixels"/>
+    </leaf>
+    <leaf label="off air" id="softwareOffAir">
+      <image url="./resources/build/data/content/software/offAir/OffAirIcon128.jpg" width="128" height="128"/>
+      <text label=" "/>
+      <text label="off air application for windows, 2013"/>
+      <text label="drown out audible distractions by submerging yourself in consistent and customizable noise"/>
+      <text label=" "/>
+      <text label="[ windows installer + air captive runtime ]" href="https://github.com/gmattie/Off-Air/releases/download/1.0.0/Off.Air.Extracted.Windows.zip" download="download"/>
+      <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Off-Air"/>
+    </leaf>
+    <leaf label="drop swatch" id="softwareDropSwatch">
+      <image url="./resources/build/data/content/software/dropSwatch/DropSwatchIcon128.jpg" width="128" height="128"/>
+      <text label=" "/>
+      <text label="drop swatch application for windows / mac, 2011"/>
+      <text label="explore unlimited hues and develop your color pallet with several color modes and texture options"/>
+      <text label=" "/>
+      <text label="[ windows installer ]" href="https://github.com/gmattie/Drop-Swatch/releases/download/1.0.0/Drop.Swatch.Extracted.Windows.zip" download="download"/>
+      <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Drop-Swatch"/>
+    </leaf>
+    <leaf label="disco desktop" id="softwareDiscoDesktop">
+      <image url="./resources/build/data/content/software/discoDesktop/DiscoDesktopIcon128.jpg" width="128" height="128"/>
+      <text label=" "/>
+      <text label="disco desktop application for windows / mac, 2010"/>
+      <text label="communicate with a microcontroller via usb serial port to control brightness and frequency of led lights"/>
+      <text label=" "/>
+      <text label="[ windows installer ]" href="https://github.com/gmattie/Disco-Desktop/releases/download/1.0.0/Disco.Desktop.Extracted.Windows.zip" download="download"/>
+      <text label="[ source code + compiler + packager ]" href="https://github.com/gmattie/Disco-Desktop"/>
+    </leaf>
   </branch>
 
   <!-- Contact -->
